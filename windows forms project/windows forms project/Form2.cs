@@ -36,7 +36,7 @@ namespace windows_forms_project
                     {
 
                     }
-
+                    //Kylo sucks
                     int[,] smallBoard = new int[3, 2];
                     int[,] smallBoardbuttons = new int[3, 2] { { 1, 1 }, { 1, 2 }, { 1, 3 }, };
                                                              
