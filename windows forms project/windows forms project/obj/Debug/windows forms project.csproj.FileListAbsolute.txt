@@ -1,0 +1,26 @@
+D:\Coding Year 1\windows forms project\windows forms project\bin\Debug\windows forms project.exe.config
+D:\Coding Year 1\windows forms project\windows forms project\bin\Debug\windows forms project.exe
+D:\Coding Year 1\windows forms project\windows forms project\bin\Debug\windows forms project.pdb
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows forms project.csproj.AssemblyReference.cache
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form1.resources
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows_forms_project.Properties.Resources.resources
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows forms project.csproj.GenerateResource.cache
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows forms project.csproj.CoreCompileInputs.cache
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows forms project.exe
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows forms project.pdb
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form2.resources
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form3.resources
+D:\Coding Year 1\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form4.resources
+H:\windows forms project\windows forms project\bin\Debug\windows forms project.exe.config
+H:\windows forms project\windows forms project\bin\Debug\windows forms project.exe
+H:\windows forms project\windows forms project\bin\Debug\windows forms project.pdb
+H:\windows forms project\windows forms project\obj\Debug\windows forms project.csproj.AssemblyReference.cache
+H:\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form1.resources
+H:\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form2.resources
+H:\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form3.resources
+H:\windows forms project\windows forms project\obj\Debug\windows_forms_project.Form4.resources
+H:\windows forms project\windows forms project\obj\Debug\windows_forms_project.Properties.Resources.resources
+H:\windows forms project\windows forms project\obj\Debug\windows forms project.csproj.GenerateResource.cache
+H:\windows forms project\windows forms project\obj\Debug\windows forms project.csproj.CoreCompileInputs.cache
+H:\windows forms project\windows forms project\obj\Debug\windows forms project.exe
+H:\windows forms project\windows forms project\obj\Debug\windows forms project.pdb
