@@ -17,7 +17,6 @@ namespace windows_forms_project
             InitializeComponent();
 
             this.ActiveControl = label1;
-           
 
         }
 

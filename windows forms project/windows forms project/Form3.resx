@@ -127,6 +127,7 @@
 .If the corresponding small grid is already won or full, the player may place their mark in any empty space in the corresponding larger grid.
 
 .The first player to win 3 small grids in a row (horizontally, vertically, or diagonally) on the large 9x9 board wins the game.
-</value>
+
+.If Player X wins the grid will turn light blue and if Player O wins the grid will turn light pink.</value>
   </data>
 </root>
