@@ -12,11 +12,11 @@ namespace windows_forms_project
 {
     public partial class Form2 : Form
     {
-        private Button[,] buttons = new Button[9, 9];
-        private string[,] smallGrid = new string[3, 3];
-        private string currentPlayer = "X";
-        private int currentSmallgrid = -1;
-        private TextBox PlayersTurnTextBox;
+        Button[,] buttons = new Button[9, 9];
+        string[,] smallGrid = new string[3, 3];
+        string currentPlayer = "X";
+        int currentSmallgrid = -1;
+        TextBox PlayersTurnTextBox;
 
         public Form2()
         {
@@ -25,20 +25,20 @@ namespace windows_forms_project
             PlayersTextBox();
         }
 
-        private void PlayersTextBox()
+        void PlayersTextBox()
         {
             PlayersTurnTextBox = new TextBox
             {
                 Size = new Size(200, 30),
-                Location = new Point((this.ClientSize.Width - 200) / 2, this.ClientSize.Height - 50),
-                Font = new Font("Arial", 12, FontStyle.Bold),
+                Location = new Point((this.ClientSize.Width - 200) / 2, this.ClientSize.Height - 700),
+                Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold),
                 ReadOnly = true,
                 Text = "Player X's turn"
             };
             Controls.Add(PlayersTurnTextBox); //textBox to show player turn
         }
 
-        private void Board()
+        void Board()
         {
             int buttonSize = 50;
             int gridWidth = buttonSize * 9; //9 buttons per row
@@ -67,7 +67,7 @@ namespace windows_forms_project
             } //create board and iterate through it to make buttons
         }
 
-        private void Button_Click(object sender, EventArgs e)
+        void Button_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
 
@@ -122,7 +122,7 @@ namespace windows_forms_project
             }
         }
 
-        private void Updateboard()
+        void Updateboard()
         {
             Text = $"Player {currentPlayer}'s turn";
 
@@ -143,19 +143,19 @@ namespace windows_forms_project
             }
         }
         //checks if selected row and column is in current small grid so the player makes the correct move 
-        private bool IsInCurrentSmallgrid(int row, int col)
+        bool IsInCurrentSmallgrid(int row, int col)
         {
             int smallgridRow = row / 3;
             int smallgridCol = col / 3;
             return GetSmallgrid(smallgridRow, smallgridCol) == currentSmallgrid;
         }
         //combine row and column into a single number 
-        private int GetSmallgrid(int smallgridRow, int smallgridCol)
+        int GetSmallgrid(int smallgridRow, int smallgridCol)
         {
             return smallgridRow * 3 + smallgridCol;
         }
 
-        private bool CheckSmallgridWin(int smallgridRow, int smallgridCol)
+        bool CheckSmallgridWin(int smallgridRow, int smallgridCol)
         {
             //check rows, columns, and diagonals within the small grid 
             for (int i = 0; i < 3; i++)
@@ -176,7 +176,7 @@ namespace windows_forms_project
             return false;
         }
 
-        private bool CheckOverallWin()
+        bool CheckOverallWin()
         {
             //check rows, columns, and diagonals on the main grid for small grid winners
             for (int i = 0; i < 3; i++)
@@ -197,7 +197,7 @@ namespace windows_forms_project
             return false;
         }
         //checks if small grid is full
-        private bool IsSmallgridFull(int smallgrid)
+        bool IsSmallgridFull(int smallgrid)
         {
             int smallgridRow = smallgrid / 3;
             int smallgridCol = smallgrid % 3;
@@ -213,20 +213,20 @@ namespace windows_forms_project
             return true;
         }
         //marks the background color of the buttons based on the winner, if x wins its light blue and o is light pink 
-        private void MarkSmallgrid(int smallgridRow, int smallgridCol, string winner)
+        void MarkSmallgrid(int smallgridRow, int smallgridCol, string winner)
         {
             for (int row = 0; row < 3; row++)
             {
                 for (int col = 0; col < 3; col++)
                 {
                     buttons[smallgridRow * 3 + row, smallgridCol * 3 + col].BackColor =
-                        winner == "X" ? Color.LightBlue : Color.LightPink;
+                        winner == "X" ? Color.Blue : Color.Red;
                 }
             }
         }
 
         //resets the board by clearing button text, enabling the buttons and resetting the colours of grid
-        private void ResetBoard()
+        void ResetBoard()
         {
             foreach (var button in buttons)
             {
